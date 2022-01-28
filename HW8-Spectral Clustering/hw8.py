@@ -2,11 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.spatial as spa
 import os
-print(os.getcwd())
-os.chdir(r'\Users\tumec\PycharmProjects\kocuni')
 
 X = np.genfromtxt("odevler/dataset/hw08_data_set.csv", delimiter=",")
-
 N = X.shape[0]
 threshold = 1.25
 R = 5
@@ -25,7 +22,6 @@ class_deviations = np.array([[[+0.8, -0.6], [-0.6, +0.8]],
 
 class_sizes = np.array([50, 50, 50, 50, 100])
 
-
 plt.figure(figsize=(10, 10))
 plt.scatter(X[:, 0], X[:, 1], color="k")
 plt.xlabel("X_1")
@@ -35,7 +31,6 @@ plt.show()
 
 ## Euclidean Distance & Connectivity Matrix
 euc_dist = np.array([[np.sqrt((X[j][0] - X[k][0])**2 + (X[j][1] - X[k][1])**2) for k in range(N)] for j in range(N)])
-
 
 B = np.zeros((N, N), dtype=int)
 for j in range(N):
