@@ -104,8 +104,6 @@ plt.plot(X[y_predicted != y_truth, 0], X[y_predicted != y_truth, 1], "ko", marke
 plt.contour(x1_grid, x2_grid, discriminant_values, levels = 0, colors = "k")
 
 
-
-
 plt.xlabel("x1")
 plt.ylabel("x2")
 plt.show()
