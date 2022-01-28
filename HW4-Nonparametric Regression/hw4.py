@@ -2,12 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import os
-print(os.getcwd())
-os.chdir(r'\Users\tumec\PycharmProjects\kocuni')
 
 
-
-## İmport data
+## import data
 data = pd.read_csv("odevler/dataset/hw04_data_set.csv")
 
 data.shape
