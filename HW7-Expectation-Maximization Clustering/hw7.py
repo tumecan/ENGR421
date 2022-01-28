@@ -6,10 +6,6 @@ import os
 import scipy.stats as stats
 import pandas as pd
 from math import e, pow
-print(os.getcwd())
-os.chdir(r'\Users\tumec\PycharmProjects\kocuni')
-
-
 
 
 class_means = np.array([[+2.5, +2.5],
